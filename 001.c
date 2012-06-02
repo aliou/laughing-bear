@@ -9,6 +9,6 @@ int main(int argc, const char * argv[]) {
   for (int i = 0; i < 1000 ; i++) 
     sum += (i % 3 == 0 || i % 5 == 0) ? i : 0;
 
-  printf("sum = %d\n", sum);
+  printf("sum = %d.\n", sum);
   return 0;
 }
