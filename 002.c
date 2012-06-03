@@ -6,21 +6,16 @@
 
 #include <stdio.h>
 
-int fibo(int a, int b);
-
 int main(int argc, const char * argv[]) {
-  int firstprev = 1, secondprev = 1, current, sum = 0;
+  int fib1 = 1, fib2 = 1, current, sum = 0;
 
   while(sum < 4000000) {
-    current = fibo(firstprev, secondprev);
+    current = fib1 + fib2;
     sum += (current % 2 == 0) ? current : 0;
-    secondprev = firstprev;
-    firstprev = current;
+    fib2 = fib1;
+    fib1 = current;
   }
   printf("sum = %d.\n", sum);
   return 0;
 }
 
-int fibo(int a, int b) {
-  return a + b;
-}
