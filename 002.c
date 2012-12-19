@@ -6,7 +6,8 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
+int main()
+{
   int fib1 = 1, fib2 = 1, current, sum = 0;
 
   while(sum < 4000000) {
@@ -18,4 +19,3 @@ int main(int argc, const char * argv[]) {
   printf("sum = %d.\n", sum);
   return 0;
 }
-

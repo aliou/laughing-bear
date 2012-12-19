@@ -33,9 +33,7 @@ int	main()
   while (nb && nb != 1)
   {
     if (nb % div == 0 && is_prime(div))
-    {
       nb = nb / div;
-    }
     else
       div++;
   }
