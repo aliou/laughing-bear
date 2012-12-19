@@ -1,1 +1,0 @@
-My euler project answers.
