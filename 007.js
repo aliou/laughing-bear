@@ -11,7 +11,7 @@ function isPrime(nb)
   if (nb % 2 === 0)
     return false;
   var div = 3;
-  while (div < nb / 2)
+  while (div < Math.sqrt(nb))
   {
     if (nb % div === 0)
       return false;
