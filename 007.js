@@ -20,13 +20,13 @@ function isPrime(nb)
   return true;
 }
 
-primes = [];
+primes = [2];
 
-var i = 2;
+var i = 3;
 while (primes.length !== 10001)
 {
   if (isPrime(i))
     primes.push(i);
-  i++;
+  i += 2;
 }
 console.log(primes[10000]);
