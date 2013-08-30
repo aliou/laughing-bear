@@ -1,3 +1,4 @@
 require "./misc/digits"
+require "./misc/factorial"
 
-puts (1..100).inject(:*).digits.inject(:+)
+puts 100.factorial.digits.inject(:+)
