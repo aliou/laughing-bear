@@ -1,3 +1,6 @@
+# What is the greatest product of four adjacent numbers in the same direction
+# (up, down, left, right, or diagonally) in the 2020 grid?
+
 string = "08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
@@ -28,10 +31,10 @@ array.each_with_index do |line, i|
     if i < 17
       values << array[i][j] * array[i+1][j] * array[i+2][j] * array[i+3][j]
       if j < 17
-	values << array[i][j] * array[i+1][j+1] * array[i+2][j+2] * array[i+3][j+3]
+        values << array[i][j] * array[i+1][j+1] * array[i+2][j+2] * array[i+3][j+3]
       end
       if j > 2
-	values << array[i][j] * array[i+1][j-1] * array[i+2][j-2] * array[i+3][j-3]
+        values << array[i][j] * array[i+1][j-1] * array[i+2][j-2] * array[i+3][j-3]
       end
     end
     if j < 17
@@ -41,4 +44,3 @@ array.each_with_index do |line, i|
 end
 
 puts values.max
-
