@@ -26,7 +26,7 @@ int	main()
     for (int j = 999; j > 99; j--)
     {
       if (is_palindrome(i * j) && i * j > max)
-	max = i * j;
+        max = i * j;
     }
   }
   printf("%d\n", max);
