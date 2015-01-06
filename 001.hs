@@ -4,5 +4,5 @@
 
 
 main = do
-  let sum = [x | x <- [0..1000], mod x 3 == 0 || mod x 5 == 0]
-  putStrLn $ show $ foldl1 (+) sum
+  let range = [0..1000]
+  putStrLn $ show $ foldl1 (+) [x | x <- range, mod x 3 == 0 || mod x 5 == 0]
