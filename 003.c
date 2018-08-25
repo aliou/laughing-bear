@@ -18,7 +18,7 @@ int	is_prime(long nb)
   {
     if (nb % div == 0)
       return (0);
-    div++;
+    div += 2;
   }
   return (1);
 }
@@ -28,14 +28,14 @@ int	main()
   long	nb;
   long	div;
 
-  div = 2;
+  div = 3;
   nb = 600851475143;
   while (nb && nb != 1)
   {
     if (nb % div == 0 && is_prime(div))
       nb = nb / div;
     else
-      div++;
+      div += 2;
   }
   printf("Largest prime factor of 600851475143: %ld.\n", div);
   return (0);

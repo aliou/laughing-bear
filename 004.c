@@ -23,7 +23,7 @@ int	main()
   int	max = 0;
   for (int i = 999; i > 99; i--)
   {
-    for (int j = 999; j > 99; j--)
+    for (int j = 999; j > i; j--)
     {
       if (is_palindrome(i * j) && i * j > max)
         max = i * j;
